@@ -1,6 +1,12 @@
-const botao = document.querySelector('.btn-cta');
+const input = document.querySelector('#email-input');
+const enviar = document.querySelector('#btn-enviar');
+const erro = document.querySelector('#mensagem-erro');
 
-botao.addEventListener('click', function(){
-alert('Interesse registrado! 🛒');
-botao.textContent = "Aguarde...";
+enviar.addEventListener('click', function(){
+if (input.value == ""){
+    erro.style.display = "block"; 
+} else {
+    erro.style.display = "none";
+    alert("E-mail cadastrado!")
+}
 });
