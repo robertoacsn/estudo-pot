@@ -7,6 +7,8 @@ if (input.value == ""){
     erro.style.display = "block"; 
 } else {
     erro.style.display = "none";
+    confetti()
     alert("E-mail cadastrado!")
+    
 }
 });
